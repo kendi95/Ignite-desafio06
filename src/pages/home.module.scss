@@ -1,1 +1,20 @@
 // TODO
+.loadPostsButton {
+  margin: 16px 0 24px 280px;
+  background: var(--dark-gray);
+  border: 0;
+  color: var(--pink);
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: opacity(0.8);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

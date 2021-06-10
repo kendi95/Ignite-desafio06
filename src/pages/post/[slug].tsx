@@ -1,9 +1,14 @@
+import { ReactElement } from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import Image from 'next/image';
+
+import { Header } from '../../components/Header';
 
 import { getPrismicClient } from '../../services/prismic';
 
 import commonStyles from '../../styles/common.module.scss';
 import styles from './post.module.scss';
+import banner from '../../assets/banner.png';
 
 interface Post {
   first_publication_date: string | null;
@@ -26,9 +31,21 @@ interface PostProps {
   post: Post;
 }
 
-// export default function Post() {
-//   // TODO
-// }
+export default function Post(): ReactElement {
+  // TODO
+  return (
+    <>
+      <Header />
+
+      {/* <Image
+        src="../../assets/banner.png"
+        alt="Banner"
+        width="1440"
+        height="400"
+      /> */}
+    </>
+  );
+}
 
 // export const getStaticPaths = async () => {
 //   const prismic = getPrismicClient();

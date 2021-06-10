@@ -5,3 +5,21 @@
 }
 
 // TODO
+:root {
+  --dark-gray: #1A1D23;
+  --medium-gray: #BBBBBB;
+  --light-gray: #D7D7D7;
+  --light-white: #F8F8F8;
+  --pink: #FF57B2;
+}
+
+body {
+  background: var(--dark-gray);
+  font-family: "Inter", sans-serif;
+
+  max-width: 1440px;
+}
+
+a {
+  cursor: pointer;
+}
